@@ -1,0 +1,159 @@
+header i{
+  display: none;
+}
+.img-box-mobile img{
+  display: none;
+}
+.btn-1{
+  display: none;
+}
+
+@media (max-width:940px){
+.home {
+  margin-top: 100px;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  min-height: 0px;
+}
+
+.img-box-mobile img{
+  display: block;
+  flex-direction: column;
+  border-radius: 50%;
+  height: 300px;
+  width: auto;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.btn-1{
+  display: block;
+}
+
+.btn-2{
+  margin: 0;
+}
+
+.img-box img {
+  display: none;
+}
+
+.home-content {
+  text-align: center;
+}
+
+header .logo{
+  margin-right: 220px;
+}
+
+header .navbar{
+  display: none;
+}
+
+header i{
+  color: #fff;
+  display: block;
+  margin-top: 10px;
+  font-size: 30px;   
+}
+
+.contato{
+  display: none;
+}
+
+.img-box-mobile img{
+  display: block;
+  flex-direction: column;
+  border-radius: 50%;
+  height: 300px;
+  width: auto;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.sobre-img{
+  display: none;
+}
+
+.sobre-conteudo p{
+  margin-top:20px;
+  font-size: 30px;
+}
+
+.sobre-conteudo .btn-2{
+  margin-left:60px;
+}
+
+.btn-1,.btn-2{
+  margin-top: 15px;
+}
+
+form input, form textarea{
+  width: 80%;
+  margin-left: 40px;
+}
+
+}
+
+
+.menu-mobile {
+position: fixed;
+top: 0;
+right: -100%; 
+width: 70%;
+height: 100%;
+background-color: #fff;
+box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+transition: right 0.3s ease;
+z-index: 1000;
+display: flex;
+flex-direction: column;
+padding: 1rem;
+}
+
+.menu-mobile nav a {
+text-align: end;
+display: block;
+margin-top:25px;
+color: #000;
+text-decoration: none;
+font-size: 1.2rem;
+transition: 0.8s;
+}
+
+.menu-mobile nav a:hover {
+background-color: #fff;
+text-shadow: 0 0 25px rgb(103, 25, 104),
+0 0 50px rgb(103, 25, 104);
+transform: scale(1.05);   
+}
+
+.btn-fechar i{
+font-size: 30px;
+}
+
+.btn-fechar {
+align-self: flex-end;
+cursor: pointer;
+}
+
+.overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+z-index: 999;
+display: none;
+}
+
+
+.menu-mobile.abrir-menu {
+right: 0; 
+}
+
+.overlay.ativo {
+display: block; 
+}

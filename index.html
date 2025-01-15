@@ -1,16 +1,91 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portifolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsividade.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
-</body>
+    <header class="header">
+        <a href="" class="logo"><span>isa</span>bela</a>
 
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#formulario">Formulario</a>
+        </nav>
+        
+        <div class="btn-abrir-menu" id="btn-menu">
+            <i class="bi bi-list"></i>
+        </div>
+
+        <a href="/doc/Currículo Isah.pdf" download="curriculoIsabela" class="contato">Currículo</a>
+    </header>
+
+
+        <div class="menu-mobile" id="menu-mobile">
+            <div class="btn-fechar" id="btn-fechar">
+                <i class="bi bi-x"></i>
+            </div>
+            <nav>
+                <a href="#home" class="active">Home</a>
+                <a href="#sobre">Sobre mim</a>
+                <a href="#formulario">formulario</a>
+            </nav>
+            <a href="#" class="contato">Meu contato</a>
+        </div>
+    
+    
+        <div class="overlay" id="overlay-menu"></div>
+
+    <section id="home" class="home">
+        <div class="homecontent">
+            <h3>Olá</h3>
+
+            <h1>Eu sou<span> <br>A Isabela</span> E esse é meu portifolio</h1>
+
+            <p>Seja bem-vindo ao meu portfólio! Nesse portfólio, o objetivo é compartilhar  algumas das competências que desenvolvi ao longo da minha carreira, além de experiências pessoais e profissionais que marcaram minha trajetória.</p> 
+
+            <div class="img-box-mobile">
+                <img src="/images/isabela.jpeg" alt="">
+            </div>
+
+             <div class="btn-box">
+                <a href="/doc/Currículo Isah.pdf" download="isabelacurriculo"><button class="btn-1">Curriculo</button></a>
+                <button class="btn-2">Certificados</button>
+            </div> 
+            
+        </div>
+        <div class="img-box">
+            <img src="/images/isabela.jpeg" alt="">
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+            <div class="sobre-img">
+                <img src="/images/isabela2.jpeg" alt="">
+            </div>
+            <div class="sobre-conteudo">
+                <h2 class="heading">Sobre <span>mim</span></h2>
+                <p>Olá, me chamo Isabela e tenho 19 anos. Ao longo da minha trajetória, adquiri experiência em diversas áreas como contabilidade, administração, fiscal, financeiro, recursos humanos (RH) e departamento pessoal (DP). Mais recentemente, também venho me dedicando ao secretariado, ampliando minhas habilidades de organização e suporte. Meu objetivo é continuar desenvolvendo minhas competências e contribuir de forma eficaz para as equipes e projetos em que atuo.!</p>
+            </div>
+    </section>
+
+    <section id="formulario" class="contato-formulario">
+        <h2 class="meu-contato">Entre em<span> Contato</span></h2>
+
+        <form method="post" action="https://formsubmit.co/ajax/isahzurc@gmail.com" data-form>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+            <input type="text" id="email" name="email" placeholder="Seu E-mail" required>
+            <input type="text" id="telefone" name="telefone" placeholder="Seu celular" required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Sua Mensagem"></textarea>
+                <input type="Enviar" value="Enviar Mensagem" class="btn-enviar">
+        </form>
+    </section>
+    
+</body>
+<script src="/js/script.js"></script>
 </html>
